@@ -1,0 +1,105 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+    @apply mx-auto px-24 py-10;
+}
+
+.titulo-1 {
+    @apply font-ubuntu text-3xl font-[500];
+}
+
+.titulo-2 {
+    @apply font-ubuntu text-2xl font-normal;
+}
+
+p {
+    @apply font-open;
+}
+
+/* portafolio */
+.clr {
+    clear: both;
+}
+
+.gallery-main {
+    width: 90%;
+    min-height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+label {
+    width: 15%;
+    display: inline-block;
+    background: whitesmoke;
+    color: #08989f;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    margin: 0.8px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked +label {
+    background: #08989f;
+    color: #fff;
+}
+
+input[type="radio"][id="bed"]:checked ~ .sofa,
+input[type="radio"][id="bed"]:checked ~ .chair{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+input[type="radio"][id="chair"]:checked ~ .bed,
+input[type="radio"][id="chair"]:checked ~ .sofa{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+input[type="radio"][id="sofa"]:checked ~ .bed,
+input[type="radio"][id="sofa"]:checked ~ .chair{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallery-image {
+    width: 24.6%;
+    height: 300px;
+    float: left;
+    margin: .2%;
+    position: relative;
+    overflow: hidden;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
