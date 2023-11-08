@@ -2,20 +2,11 @@
     <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
       <div class="sm:col-span-2">
         <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-          <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-            <rect x="3" y="1" width="7" height="12"></rect>
-            <rect x="3" y="17" width="7" height="6"></rect>
-            <rect x="14" y="1" width="7" height="6"></rect>
-            <rect x="14" y="11" width="7" height="12"></rect>
-          </svg>
           <span class="ml-2 text-xl font-bold tracking-wide text-gray-300 uppercase">Follower Media Group</span>
         </a>
         <div class="mt-6 lg:max-w-sm">
           <p class="text-sm text-gray-400">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-          </p>
-          <p class="mt-4 text-sm text-gray-400">
-            Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Follower Media Group is a company specialized in providing technological solutions such as graphic design, web design, photography, and advertising videos, as well as social media management, located in NYC.
           </p>
         </div>
       </div>
@@ -63,7 +54,7 @@
           </a>
         </div>
         <p class="mt-4 text-sm text-gray-500">
-          Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+          Follow us on social networks for special offers and promotions.
         </p>
       </div>
     </div>
@@ -73,11 +64,11 @@
       </p>
       <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
         <li>
-          <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy Policy</a>
+          <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Design by Follower Media Group</a>
         </li>
-        <li>
+        {{-- <li>
           <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</a>
-        </li>
+        </li> --}}
       </ul>
     </div>
   </div>

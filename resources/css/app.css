@@ -28,18 +28,17 @@ p {
 
 .gallery-main {
     width: 90%;
-    min-height: 1000px;
+    /*min-height: 1900px;*/
     margin: 0 auto;
     text-align: center;
 }
 
 label {
-    width: 15%;
     display: inline-block;
     background: whitesmoke;
     color: #08989f;
     letter-spacing: 2px;
-    padding: 10px 0;
+    padding: 10px 15px;
     margin: 0.8px;
     margin-bottom: 30px;
     border-radius: 5px;
@@ -56,8 +55,9 @@ input[type="radio"]:checked +label {
     color: #fff;
 }
 
-input[type="radio"][id="bed"]:checked ~ .sofa,
-input[type="radio"][id="bed"]:checked ~ .chair{
+input[type="radio"][id="grafico"]:checked ~ .fotografia,
+input[type="radio"][id="grafico"]:checked ~ .web,
+input[type="radio"][id="grafico"]:checked ~ .redes{
     width: 0;
     height: 0;
     padding: 0;
@@ -66,8 +66,9 @@ input[type="radio"][id="bed"]:checked ~ .chair{
     transition: 0.5s;
 }
 
-input[type="radio"][id="chair"]:checked ~ .bed,
-input[type="radio"][id="chair"]:checked ~ .sofa{
+input[type="radio"][id="redes"]:checked ~ .grafico,
+input[type="radio"][id="redes"]:checked ~ .web,
+input[type="radio"][id="redes"]:checked ~ .fotografia{
     width: 0;
     height: 0;
     padding: 0;
@@ -76,8 +77,20 @@ input[type="radio"][id="chair"]:checked ~ .sofa{
     transition: 0.5s;
 }
 
-input[type="radio"][id="sofa"]:checked ~ .bed,
-input[type="radio"][id="sofa"]:checked ~ .chair{
+input[type="radio"][id="fotografia"]:checked ~ .grafico,
+input[type="radio"][id="fotografia"]:checked ~ .web,
+input[type="radio"][id="fotografia"]:checked ~ .redes{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+input[type="radio"][id="web"]:checked ~ .grafico,
+input[type="radio"][id="web"]:checked ~ .fotografia,
+input[type="radio"][id="web"]:checked ~ .redes{
     width: 0;
     height: 0;
     padding: 0;
@@ -87,10 +100,10 @@ input[type="radio"][id="sofa"]:checked ~ .chair{
 }
 
 .gallery-image {
-    width: 24.6%;
-    height: 300px;
+    width: 32.6%;
+    height: 250px;
     float: left;
-    margin: .2%;
+    margin: .3%;
     position: relative;
     overflow: hidden;
     transition: .8s;
